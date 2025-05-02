@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useState } from "react";
+
 import Homep from "@/components/homep";
 import Account from "@/components/account";
 import Dates from "@/components/dates";
@@ -62,11 +63,8 @@ export default function HomePage() {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 p-0">
-          {renderComponent()}
-        </div>
+        <div className="flex-1 p-0">{renderComponent()}</div>
       </div>
-
     </div>
   );
 }
